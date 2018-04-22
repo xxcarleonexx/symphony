@@ -1,2 +1,0 @@
-# symphony
-Test repo
