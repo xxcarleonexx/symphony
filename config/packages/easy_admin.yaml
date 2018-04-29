@@ -1,5 +1,7 @@
 easy_admin:
     site_name: Some name
+    design:
+        color_scheme: 'dark'
     entities:
         # List the entity class name you want to manage
         Products:
