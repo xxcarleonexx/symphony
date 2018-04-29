@@ -3,62 +3,20 @@
 {% block title %}{% block trans %} Login {% endblock %}{%   endblock %}
 
 {% block body %}
-    <div class="materialContainer">
-
-
-        <div class="box">
-
-            <div class="title">LOGIN</div>
-
-            <div class="input">
-                <label for="name">Username</label>
-                <input type="text" name="name" id="name">
-                <span class="spin"></span>
-            </div>
-
-            <div class="input">
-                <label for="pass">Password</label>
-                <input type="password" name="pass" id="pass">
-                <span class="spin"></span>
-            </div>
-
-            <div class="button login">
-                <button><span>GO</span> <i class="fa fa-check"></i></button>
-            </div>
-
-            <a href="" class="pass-forgot">Forgot your password?</a>
-
-        </div>
-
-        <div class="overbox">
-            <div class="material-button alt-2"><span class="shape"></span></div>
-
-            <div class="title">REGISTER</div>
-
-            <div class="input">
-                <label for="regname">Username</label>
-                <input type="text" name="regname" id="regname">
-                <span class="spin"></span>
-            </div>
-
-            <div class="input">
-                <label for="regpass">Password</label>
-                <input type="password" name="regpass" id="regpass">
-                <span class="spin"></span>
-            </div>
-
-            <div class="input">
-                <label for="reregpass">Repeat Password</label>
-                <input type="password" name="reregpass" id="reregpass">
-                <span class="spin"></span>
-            </div>
-
-            <div class="button">
-                <button><span>NEXT</span></button>
-            </div>
-
-
-        </div>
-
+    <div class="login-container">
+        <section class="login" id="login">
+            <header>
+                <h2>My site test name</h2>
+                <h4>Login</h4>
+            </header>
+            <form class="login-form" action="#" method="post">
+                <input type="text" class="login-input" placeholder="User" required autofocus/>
+                <input type="password" class="login-input" placeholder="Password" required/>
+                <div class="submit-container">
+                    <button type="submit" class="login-button">SIGN IN</button>
+                </div>
+            </form>
+        </section>
     </div>
+    <button id="e1">Login error!</button>
 {% endblock %}
