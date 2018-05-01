@@ -6,5 +6,8 @@ easy_admin:
         # List the entity class name you want to manage
         Products:
             class: App\Entity\Products
+            label: 'Customers'
+            list:
+              title: '%%entity_label%% listing'
 #        - App\Entity\Category
 #        - App\Entity\User
